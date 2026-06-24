@@ -6,6 +6,11 @@ footer {
             "groups online forum-stats"
             "groups online last-user";
 
+        @media (max-width: 700px) {
+            grid-template-columns: 1;
+            grid-template-areas: "forum-stats" "online" "last-user" "groups";
+        }
+
         .pixie-footer-stats {
             grid-area: forum-stats;
         }
@@ -16,6 +21,16 @@ footer {
 
         .pixie-footer-online {
             grid-area: online;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+
+            .pixie-footer-online-summary {
+                grid-column: 1 / -1;
+            }
+
+            @media (max-width: 700px) {
+                grid-template-columns: 1fr;
+            }
         }
 
         .pixie-footer-groups {
