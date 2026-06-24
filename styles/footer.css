@@ -1,0 +1,25 @@
+footer {
+    div[data-pixie-footer] {
+        display: grid;
+        grid-template-columns: max-content 1fr max-content;
+        grid-template-areas:
+            "groups online forum-stats"
+            "groups online last-user";
+
+        .pixie-footer-stats {
+            grid-area: forum-stats;
+        }
+
+        .pixie-footer-lastuser {
+            grid-area: last-user;
+        }
+
+        .pixie-footer-online {
+            grid-area: online;
+        }
+
+        .pixie-footer-groups {
+            grid-area: groups;
+        }
+    }
+}
