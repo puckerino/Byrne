@@ -18,6 +18,18 @@ footer {
 
         .pixie-footer-lastuser {
             grid-area: last-user;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                font: var(--f-l) var(--f-title);
+            }
+
+            a {
+                font: var(--f-xl) var(--f-post-username);
+            }
         }
 
         .pixie-footer-online {
