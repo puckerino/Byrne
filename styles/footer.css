@@ -50,4 +50,12 @@ footer {
             grid-area: groups;
         }
     }
+
+    .afiliados {
+
+        .afiliados-50 {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+            gap: var(--spacing-s);
+        }
 }
