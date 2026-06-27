@@ -49,6 +49,12 @@ footer {
 
         .pixie-footer-groups {
             grid-area: groups;
+
+            .pixie-footer-group-list {
+                display: flex;
+                flex-direction: column;
+                gap: var(--spacing-s);
+            }
         }
     }
 
