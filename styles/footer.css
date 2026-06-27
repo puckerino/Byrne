@@ -1,4 +1,9 @@
 footer {
+
+    &:not(:has(.pixie-footer-online)) div[data-pixie-footer] {
+        display: none;
+    }
+    
     div[data-pixie-footer] {
         display: grid;
         grid-template-columns: max-content 1fr max-content;
