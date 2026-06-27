@@ -6,6 +6,11 @@ footer .forum-options {
     display: flex;
     align-items: center;
     gap: var(--spacing-s);
+
+    li {
+        display: flex;
+        align-items: center;
+    }
 }
 
 /* ==================================
