@@ -1,4 +1,11 @@
 footer {
+
+    .forum-options {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-s);
+    }
+        
     
     div[data-pixie-footer] {
         display: grid;
