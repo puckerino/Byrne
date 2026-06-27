@@ -1,11 +1,18 @@
-footer {
+/* ==================================
+LINKS OPCIONES
+================================== */
 
-    .forum-options {
-        display: flex;
-        align-items: center;
-        gap: var(--spacing-s);
-    }
-        
+footer .forum-options {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-s);
+}
+
+/* ==================================
+BLOQUE PRINCIPAL 
+================================== */
+
+footer {
     
     div[data-pixie-footer] {
         display: grid;
@@ -69,12 +76,17 @@ footer {
             }
         }
     }
+}
 
-    .afiliados {
+/* ==================================
+FOOTER WIDGETS - AFILIADOS
+================================== */
 
-        .afiliados-50 {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
-            gap: var(--spacing-s);
-        }
+footer .afiliados {
+    
+    .afiliados-50 {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+        gap: var(--spacing-s);
+    }
 }
