@@ -84,12 +84,65 @@ footer {
 
         .pixie-footer-groups {
             grid-area: groups;
+        }
+    }
+}
 
-            .pixie-footer-group-list {
-                display: flex;
-                flex-direction: column;
-                gap: var(--spacing-s);
+/* ==================================
+GRUPOS
+================================== */
+
+footer .pixie-footer-groups {
+    .pixie-footer-group-list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-s);
+
+        .pixie-footer-group {
+            background: var(--group-color);
+            padding: var(--spacing) var(--spacing-l);
+            position: relative;
+            display: flex;
+
+            &[href*="/g2-"] {
+                --group: 2;
             }
+            
+            &[href*="/g3-"] {
+                --group: 3;
+            }            
+            
+            &[href*="/g4-"] {
+                --group: 4;
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                background: var(--text-contrast);
+                opacity: .3;
+                height: 1rem;
+                width: 1rem;
+                -webkit-mask-position-x: center;
+                -webkit-mask-position-y: center;
+                mask-size: contain;
+                mask-repeat: no-repeat;
+                
+                @container style(--group: 2) {
+                    mask-image: var(--group-2-icon);
+                }                
+                
+                @container style(--group: 3) {
+                    mask-image: var(--group-3-icon);
+                }                
+                
+                @container style(--group: 4) {
+                    mask-image: var(--group-4-icon);
+                }
+            }
+
+
+                
         }
     }
 }
