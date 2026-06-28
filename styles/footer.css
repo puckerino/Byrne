@@ -104,6 +104,10 @@ footer .pixie-footer-groups {
             position: relative;
             display: flex;
 
+            span, strong {
+                position: relative;
+            }
+
             &[href*="/g2-"] {
                 --group: 2;
             }
