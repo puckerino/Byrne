@@ -163,3 +163,22 @@ footer .afiliados {
         gap: var(--spacing-s);
     }
 }
+
+/* ==================================
+LINKS FOROACTIVO 
+==================================== */
+
+#page-footer {
+  .rightside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--surface-contrast);
+    color: var(--text-contrast);
+    padding: var(--spacing-s);
+    gap: var(--spacing-s);
+    font: var(--f-s) var(--f-mono);
+    text-transform: uppercase;
+  }
+}
+
