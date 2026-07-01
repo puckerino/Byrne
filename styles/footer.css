@@ -103,6 +103,9 @@ footer .pixie-footer-groups {
             padding: var(--spacing) var(--spacing-2xl);
             position: relative;
             display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: clip;
 
             span, strong {
                 position: relative;
@@ -122,7 +125,6 @@ footer .pixie-footer-groups {
 
             &:before {
                 content: "";
-                position: absolute;
                 background: var(--text-contrast);
                 opacity: .3;
                 height: 90%;
