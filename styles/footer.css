@@ -125,6 +125,7 @@ footer .pixie-footer-groups {
 
             &:before {
                 content: "";
+                position: absolute;
                 background: var(--text-contrast);
                 opacity: .3;
                 height: 90%;
