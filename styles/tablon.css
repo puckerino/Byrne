@@ -167,17 +167,20 @@
 			align-items: center;
 			padding: var(--spacing);
 			position: relative;
+			line-height: 1;
 
 			span {
 				position: relative;
 				color: var(--text-contrast);
+				line-height: 1;
+				text-align: center;
 
 				.title {
-					font: var(--f-base) var(--f-title);
+					font: bold var(--f-base) var(--f-title);
 				}
 
 				.description {
-					font: var(--f-s) var(--f-text);
+					font: var(--f-xs) var(--f-text);
 				}
 			}
 
