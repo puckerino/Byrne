@@ -148,6 +148,7 @@
 		grid-area: eventos;
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+		gap: var(--spacing);
 
 		a {
 			display: flex;
@@ -172,6 +173,7 @@
 
 			&:before {
 				content: "";
+				position: absolute;
 				inset: 0;
 				background: var(--evento-img);
 				background-size: cover;
