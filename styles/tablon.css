@@ -20,23 +20,19 @@
 	.lasttopics { 
 
 		.stack { 
-
+			gap: 0;
+			
 			.title { 
-
+				font: bold 1rem var(--f-title);
 			}
 
 			.username { 
-
-				.group-2 { 
-
-					strong { 
-
-					}
-				}
+				font: bold 1rem var(--f-title);
 			}
 
 			.date { 
-
+				font: var(--f-s) var(--f-text); 
+				text-transform: uppercase;
 			}
 		}
 	}
