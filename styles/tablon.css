@@ -31,7 +31,6 @@
 		grid-area: anuncios;
 		display: flex;
 		flex-direction:column;
-		background: var(--surface);
 
 		.wrap {
 			display: flex;
@@ -151,14 +150,20 @@
 		grid-area: intro;
 		display: grid;
 		grid-template-columns: .5fr 1fr;
+		gap: var(--spacing);
 
 		img {
 			object-fit: cover;
+			height: 100%;
 		}
 
 		.wrap {
 			display: flex;
 			flex-direction: column;
+
+			p {
+				margin: 0;
+			}
 		}
 	}
 
