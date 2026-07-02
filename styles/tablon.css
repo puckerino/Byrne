@@ -59,7 +59,21 @@
 	.staff { 
 
 		a { 
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			height: 100px;
+			width: 100px;
 
+			&:before {
+				content: "";
+				inset: auto;
+				position: absolute;
+				background: var(--staff-img);
+				background-size: cover;
+				background-position: center;
+			}
 		}
 	}
 
