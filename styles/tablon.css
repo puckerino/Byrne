@@ -151,6 +151,7 @@
 
 		a {
 			display: flex;
+			flex-direction: column;
 			justify-content: center;
 			align-items: center;
 			padding: var(--spacing);
@@ -161,9 +162,11 @@
 				color: var(--text-contrast);
 
 				.title {
+					font: var(--f-base) var(--f-title);
 				}
 
 				.description {
+					font: var(--f-s) var(--f-text);
 				}
 			}
 
