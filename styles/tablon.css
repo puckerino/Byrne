@@ -149,6 +149,17 @@
 
 	.introduccion { 
 		grid-area: intro;
+		display: grid;
+		grid-template-columns: .5fr 1fr;
+
+		img {
+			object-fit: cover;
+		}
+
+		.wrap {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 
 	.eventos {
