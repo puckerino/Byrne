@@ -38,6 +38,8 @@
 			display: flex;
 			flex-direction: column;
 			gap: var(--spacing-xs);
+			max-height: 200px;
+			overflow:auto;
 		}
 
 		.tablon-title {
@@ -82,6 +84,8 @@
 			display: flex;
 			flex-direction: column;
 			gap: var(--spacing-s);
+			max-height: 200px;
+			overflow: auto;
 		}
 
 		.lasttopic { 
