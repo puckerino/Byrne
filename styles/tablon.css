@@ -32,7 +32,7 @@
 
 		.wrap {
 			display: flex;
-			flex-directoin: column;
+			flex-direction: column;
 			gap: var(--spacing-xs);
 		}
 			
