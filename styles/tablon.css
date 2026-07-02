@@ -177,7 +177,7 @@
 	.introduccion { 
 		grid-area: intro;
 		display: grid;
-		grid-template-columns: .5fr 1fr;
+		grid-template-columns: 200px 1fr;
 		gap: var(--spacing);
 
 		img {
