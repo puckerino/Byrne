@@ -31,21 +31,21 @@
 		grid-area: anuncios;
 		display: flex;
 		flex-direction:column;
-		padding: var(--spacing);
 		background: var(--surface);
-
+		
+		.tablon-title {
+			padding: var(--spacing);
+			font: var(--f-l) var(--f-title);
+		}
+		
 		.wrap {
 			display: flex;
 			flex-direction: column;
+			padding: var(--spacing);
 			gap: var(--spacing-xs);
 			max-height: 200px;
 			overflow:auto;
-		}
-
-		.tablon-title {
-			font: var(--f-l) var(--f-title);
-		}
-			
+		}	
 
 		a { 
 			display: flex;
@@ -77,17 +77,19 @@
 		background: var(--surface);
 
 		.tablon-title {
+			padding: var(--spacing);
 			font: var(--f-l) var(--f-title);
 		}
-
+		
 		.wrap {
 			display: flex;
 			flex-direction: column;
-			gap: var(--spacing-s);
+			padding: var(--spacing);
+			gap: var(--spacing-xs);
 			max-height: 200px;
-			overflow: auto;
-		}
-
+			overflow:auto;
+		}	
+		
 		.lasttopic { 
 			gap: 0;
 			border: 1px solid var(--border);
