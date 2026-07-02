@@ -178,12 +178,20 @@
 	.introduccion { 
 		grid-area: intro;
 		display: grid;
-		grid-template-columns: 200px 1fr;
+		grid-template-columns: calc(200px + var(--spacing)) 1fr;
 		gap: var(--spacing);
+
+		@media (max-width: 700px) {
+			grid-template-columns: 1fr;
+		}
 
 		img {
 			object-fit: cover;
 			height: 100%;
+
+			@media (max-width: 700px) {
+				display: none;
+			}
 		}
 
 		.wrap {
