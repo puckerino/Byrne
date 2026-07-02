@@ -8,11 +8,28 @@
 	}
 
 	.anuncios { 
+		display: flex;
+		flex-direction:column;
+		gap: var(--spacing-xs);
 
 		a { 
+			display: flex;
+			align-items: center;
+			gap: var(--spacing-s);
 
 			span { 
 
+			}
+
+			&:before {
+				content: "";
+				height: 1rem;
+				width: 1rem;
+				background: var(--accent);
+				mask-image: url("https://unpkg.com/lucide-static/icons/megaphone.svg");
+				mask-size: contain;
+				mask-repeat: no-repeat;
+				mask-position: center;
 			}
 		}
 	}
