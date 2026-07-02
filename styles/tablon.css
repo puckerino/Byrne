@@ -74,6 +74,8 @@
 	.lasttopics { 
 		grid-area: topics;
 		background: var(--surface);
+		display: flex;
+		flex-direction: column;
 
 		.tablon-title {
 			padding: var(--spacing);
