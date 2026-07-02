@@ -174,12 +174,12 @@
 				line-height: 1;
 				text-align: center;
 
-				.title {
+				&.title {
 					font: bold var(--f-base) var(--f-title);
 				}
 
-				.description {
-					font: var(--f-xs) var(--f-text);
+				&.description {
+					font: var(--f-s) var(--f-text);
 				}
 			}
 
