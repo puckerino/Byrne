@@ -4,8 +4,8 @@
 	padding: var(--spacing);
 	gap: var(--spacing);
 	display: grid;
-	grid-template-columns: repeat(2,max-content);
-	grid-template-rows: repeat(4,max-content);
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, max-content);
 	grid-template-areas: 
 	"intro links"
 	"intro staff"
