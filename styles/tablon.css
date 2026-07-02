@@ -6,12 +6,13 @@
 	gap: var(--spacing);
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: repeat(4, max-content);
+	grid-template-rows: repeat(5, max-content);
 	grid-template-areas: 
-	"intro intro intro links links links"
-	"intro intro intro periodo periodo periodo"
+		"intro intro intro links links links"
+		"intro intro intro periodo periodo periodo"
 		"intro intro intro localizacion localizacion localizacion"
-		"staff staff anuncios anuncios topics topics";
+		"staff staff anuncios anuncios topics topics"
+		"eventos eventos anuncios anuncios topics topics";
 	
 
 	.linksrapidos { 
