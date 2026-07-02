@@ -68,7 +68,7 @@
 
 			&:before {
 				content: "";
-				inset: auto;
+				inset: 0;
 				position: absolute;
 				background: var(--staff-img);
 				background-size: cover;
