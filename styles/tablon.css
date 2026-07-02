@@ -1,6 +1,20 @@
+/*links anuncios topics staff localizacion periodo intro */
+
 #tablon { 
+	padding: var(--spacing);
+	gap: var(--spacing);
+	display: grid;
+	grid-template-columns: repeat(2,max-content);
+	grid-template-rows: repeat(4,max-content);
+	grid-template-areas: 
+	"intro links"
+	"intro staff"
+	"localizacion periodo"
+	"anuncios topics";
+	
 
 	.linksrapidos { 
+		grid-area: links;
 
 		a { 
 
@@ -8,6 +22,7 @@
 	}
 
 	.anuncios { 
+		grid-area: anuncios;
 		display: flex;
 		flex-direction:column;
 		gap: var(--spacing-xs);
@@ -37,6 +52,7 @@
 	}
 
 	.lasttopics { 
+		grid-area: topics;
 
 		.stack { 
 			gap: 0;
@@ -57,6 +73,7 @@
 	}
 
 	.staff { 
+		grid-area: staff;
 
 		a { 
 			display: flex;
@@ -78,14 +95,17 @@
 	}
 
 	.localizacion { 
+		grid-area: localizacion;
 
 	}
 
 	.periodoroleable { 
+		grid-area: periodo;
 
 	}
 
 	.introduccion { 
+		grid-area: intro;
 
 	}
 }
