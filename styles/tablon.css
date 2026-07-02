@@ -85,6 +85,7 @@
 			transition: all .5s ease-in-out;
 
 			span {
+				transition: all .5s ease-in-out;
 				position: relative;
 				color: var(--text-contrast);
 				opacity: 0;
@@ -94,6 +95,7 @@
 			&:hover {
 				transition: all .5s ease-in-out;
 				span {
+					transition: all .5s ease-in-out;
 					opacity: 1;
 					filter: blur(0);
 				}
