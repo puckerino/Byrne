@@ -141,6 +141,38 @@
 
 	.introduccion { 
 		grid-area: intro;
+	}
 
+	.eventos {
+		grid-area: eventos;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+		a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: var(--spacing);
+			position: relative;
+
+			span {
+				position: relative;
+				color: var(--text-contrast);
+
+				.title {
+				}
+
+				.description {
+				}
+			}
+
+			&:before {
+				content: "";
+				inset: 0;
+				background: var(--evento-img);
+				background-size: cover;
+				background-position: center;
+			}
+		}
 	}
 }
