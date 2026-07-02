@@ -17,6 +17,8 @@
 
 	.linksrapidos { 
 		grid-area: links;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 
 		a { 
 			background: var(--surface);
