@@ -2,7 +2,7 @@
 
 #tablon { 
 	background: var(--surface-elevated);
-	padding: var(--spacing);
+	padding: var(--spacing-2xl);
 	gap: var(--spacing);
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
@@ -31,6 +31,8 @@
 		grid-area: anuncios;
 		display: flex;
 		flex-direction:column;
+		padding: var(--spacing);
+		background: var(--surface);
 
 		.wrap {
 			display: flex;
@@ -69,6 +71,8 @@
 
 	.lasttopics { 
 		grid-area: topics;
+		padding: var(--spacing);
+		background: var(--surface);
 
 		.tablon-title {
 			font: var(--f-l) var(--f-title);
