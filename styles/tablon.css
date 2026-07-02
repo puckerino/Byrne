@@ -1,6 +1,7 @@
 /*links anuncios topics staff localizacion periodo intro */
 
 #tablon { 
+	background: var(--surface-elevated);
 	padding: var(--spacing);
 	gap: var(--spacing);
 	display: grid;
