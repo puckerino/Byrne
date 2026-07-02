@@ -191,6 +191,8 @@
 
 			p {
 				margin: 0;
+				text-wrap: balance;
+				font-size: var(--f-s);
 			}
 		}
 	}
