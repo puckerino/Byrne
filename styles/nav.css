@@ -1,44 +1,52 @@
-nav { 
-  display: grid;
-  gap: var(--spacing-s);
-  padding-left: var(--spacing-s);
-  grid-template-columns: max-content max-content max-content 1fr;
-  grid-template-areas: "forum logo breadcrumbs user";
+nav {
+    display: grid;
+    gap: var(--spacing-s);
+    padding-left: var(--spacing-s);
+    grid-template-columns: max-content max-content max-content 1fr;
+    grid-template-areas: "forum logo breadcrumbs user";
 
-  &:has(.admin-nav) {
-    grid-template-columns: max-content max-content max-content max-content 1fr;
-    grid-template-areas: "forum logo breadcrumbs admin user";
-  }
-
-	.forum-nav { 
-    grid-area: forum;
-
-	}
-
-	.nav-logo { 
-    grid-area: logo;
-
-	}
-
-	.breadcrumbs { 
-    grid-area: breadcrumbs;
-
-    &:empty {
-      display: none;
+    &:has(.admin-nav) {
+        grid-template-columns: max-content max-content max-content max-content 1fr;
+        grid-template-areas: "forum logo breadcrumbs admin user";
     }
 
-	}
+    .forum-nav {
+        grid-area: forum;
 
-	.admin-nav { 
-    grid-area: admin;
-	}
+    }
 
-	.user-nav { 
-    grid-area: user;
-    justify-content: flex-end;
-	}
+    .nav-logo {
+        grid-area: logo;
 
-  .guest-nav {
-    grid-area: user;
-  }
+    }
+
+    .breadcrumbs {
+        grid-area: breadcrumbs;
+
+        &:empty {
+            display: none;
+        }
+
+    }
+
+    .admin-nav {
+        grid-area: admin;
+    }
+
+    .user-nav {
+        grid-area: user;
+        justify-content: flex-end;
+    }
+
+    .guest-nav {
+        grid-area: user;
+        justify-content: flex-end;
+        padding-right: var(--spacing);
+
+		button {
+			padding: var(--spacing-s) var(--spacing);
+			background: var(--accent);
+			color: contrast-color(var(--accent));
+		}
+    }
 }
