@@ -45,6 +45,7 @@ nav {
 
 		button {
 			padding: var(--spacing-xs) var(--spacing);
+			font: var(--f-s) var(--f-buttons);
 			background: var(--accent);
 			color: contrast-color(var(--accent));
 		}
