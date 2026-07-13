@@ -6,6 +6,5 @@ SHARED
   border: 1px solid var(--border);
   
   .description {
-    font-size: var(--f-s);
   }
 }
